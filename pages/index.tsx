@@ -1,50 +1,106 @@
 import type { NextPage } from 'next'
 import Timeline from '../components/Timeline'
-import RotatingText from '../components/RotatingText'
-import { ChevronDoubleDownIcon } from "@heroicons/react/24/solid"
+import Hero from '../components/Hero'
+import { ChevronDownIcon, HashtagIcon, LinkIcon } from '@heroicons/react/24/solid'
 
 const Home: NextPage = () => {
   return (
     <div className="w-full font-inter">
-      <div className="flex justify-between items-center min-h-screen bg-pale-gray-800 relative overflow-hidden">
-        <div className="w-72 h-72 absolute motion-safe:animate-[ping_2s_cubic-bezier(0,_0,_0.2,_1)_infinite] duration-500 -top-48 -left-48 border border-pale-gray-400 rounded-full" />
-        <div className="w-96 h-96 absolute motion-safe:animate-[ping_2s_cubic-bezier(0,_0,_0.2,_1)_infinite] [animation-delay:_1s] duration-500 -bottom-48 -right-48 border border-pale-gray-400 rounded-full" />
-        <div className="flex justify-between items-center mx-auto max-w-5xl w-full">
-          <div className="w-3/5 space-y-4">
-            <p className="text-2xl text-green-400">Hi, I'm</p>
-            <h1 className="font-bold text-5xl text-pale-gray-100">
-              Adrian Ardizza
-            </h1>
-            <div className="flex text-4xl text-pale-gray-100 space-x-2">
-              <p>I'm a</p>
-              <RotatingText />
+      <Hero />
+      <div className="bg-pale-gray-800 w-full max-w-5xl min-h-screen mx-auto space-y-2 flex flex-col gap-16">
+        <div id="at-a-glance" className="space-y-6 w-full">
+          <h1 className="font-inter text-white text-3xl font-bold">
+            At A Glance.
+          </h1>
+          <div className="grid grid-rows-3 grid-flow-col gap-4 w-full">
+            <div className="group bg-pale-gray-900 flex flex-col items-end row-span-3 rounded-2xl relative overflow-hidden cursor-pointer hover:-translate-y-2 duration-500 transition-all">
+              <div className="relative w-full">
+                <div className="absolute w-full h-full z-10 bg-green-900 group-hover:bg-opacity-50 bg-opacity-0 duration-500" />
+                <img className="h-96 w-full object-cover z-0 scale-105 group-hover:saturate-0 saturate-100 group-hover:scale-100 duration-500 transition-all" src="/lumina.jpg" />
+              </div>
+              <div className="flex flex-col justify-center p-4 space-y-4 z-10 bg-pale-gray-900 h-full w-full">
+                <div>
+                  <img className="h-8" src="/brands/lumina.png" />
+                </div>
+                <div>
+                  <p className="text-green-400">
+                    Latest Internship
+                  </p>
+                  <h1 className="text-pale-gray-50 font-bold">
+                    Lumina
+                  </h1>
+                  <p className="text-pale-gray-500">
+                    SE Intern | Dec '22 - Now
+                  </p>
+                </div>
+              </div>
+              <div className="absolute bottom-4 right-4 text-green-500 z-10">
+                <HashtagIcon className="h-4 w-4" />
+              </div>
             </div>
-            <div className="text-pale-gray-200">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non interdum erat. Quisque in tincidunt erat.
+
+            <div className="row-span-1 bg-pale-gray-900 rounded-2xl p-4 relative flex items-end hover:-translate-y-2 duration-500 transition-all">
+              <div className="space-y-4">
+                <img className="w-8 h-8 rounded-lg" src="/brands/sayakaya.png" />
+                <div>
+                  <p className="text-green-400">
+                    Previous Experience
+                  </p>
+                  <h1 className="text-pale-gray-50 font-bold">
+                    SayaKaya
+                  </h1>
+                  <p className="text-pale-gray-500">
+                    SE Intern | Mar '22 - Oct '22
+                  </p>
+                </div>
+              </div>
+              <div className="absolute bottom-4 right-4 text-green-500 z-10">
+                <HashtagIcon className="h-4 w-4" />
+              </div>
             </div>
-            <button className="flex items-center gap-2 border-2 text-green-400 hover:text-pale-gray-800 border-green-400 duration-250 ease-in-out transition-all hover:bg-green-400 font-medium px-4 py-2">
-              <span>Check Out My Work</span>
-              <ChevronDoubleDownIcon className="h-4" />
-            </button>
-          </div>
-          <div className="relative">
-            <div className="relative">
-              <div className="w-full h-full absolute bg-green-400 bg-opacity-[0.1] z-10 rounded-full" />
-              <img src="/image.png" className="w-80 rounded-full saturate-0 brightness-100" />
-            </div>
-            <img className="w-16 translate-x-4 -translate-y-4" src="/me-text.png" />
+            <a href="https://github.com/Meta502" target="_blank" referrerPolicy="no-referrer" className="row-span-1 bg-pale-gray-900 rounded-2xl p-4 relative flex items-end cursor-pointer hover:-translate-y-2 duration-500 transition-all">
+              <div className="space-y-4">
+                <img className="h-8" src="/brands/github-mark-white.svg" />
+                <div>
+                  <p className="text-green-400">
+                    GitHub
+                  </p>
+                  <h1 className="text-pale-gray-50 font-bold">
+                    Meta502
+                  </h1>
+                </div>
+              </div>
+              <div className="absolute bottom-4 right-4 text-green-500 z-10">
+                <LinkIcon className="h-4 w-4" />
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/adrianardizza/" target="_blank" referrerPolicy="no-referrer" className="row-span-1 bg-pale-gray-900 rounded-2xl p-4 relative flex items-end hover:-translate-y-2 duration-500 transition-all">
+              <div className="space-y-4">
+                <img className="h-8" src="/brands/linkedin.png" />
+                <div>
+                  <p className="text-green-400">
+                    Linkedin
+                  </p>
+                  <h1 className="text-pale-gray-50 font-bold">
+                    in/adrianardizza
+                  </h1>
+                </div>
+              </div>
+              <div className="absolute bottom-4 right-4 text-green-500 z-10">
+                <LinkIcon className="h-4 w-4" />
+              </div>
+            </a>
           </div>
         </div>
-      </div>
-      <div className="bg-pale-gray-800 w-full max-w-5xl mx-auto min-h-screen space-y-2 flex flex-col gap-16">
-        <div className="space-y-4">
-          <h1 className="font-inter text-white text-2xl font-bold">
-            Work Experience
+        <div id="experiences" className="space-y-4">
+          <h1 className="font-inter text-white text-3xl font-bold">
+            Work Experience.
           </h1>
           <Timeline />
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
