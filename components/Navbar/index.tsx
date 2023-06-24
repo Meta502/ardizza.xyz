@@ -28,20 +28,17 @@ const Navbar: React.FC = () => {
         >
           at a glance
         </Link>
-        <a href="#">projects</a>
-        <button>
-          <Link
-            activeClass="text-green-400"
-            className="cursor-pointer hover:text-green-400 transition-all"
-            to="experiences"
-            spy={true}
-            smooth={true}
-            duration={250}
-            offset={-100}
-          >
-            experiences
-          </Link>
-        </button>
+        <Link
+          activeClass="text-green-400"
+          className="cursor-pointer hover:text-green-400 transition-all"
+          to="experiences"
+          spy={true}
+          smooth={true}
+          duration={250}
+          offset={-100}
+        >
+          experiences
+        </Link>
       </div>
     </div>
   </div>

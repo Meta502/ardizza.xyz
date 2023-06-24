@@ -11,7 +11,7 @@ const ScrollProvider = dynamic(() => import("../hooks/useScroll"), {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ScrollProvider>
-      <div className="bg-pale-gray-800">
+      <div className="bg-pale-gray-800 pb-16">
         <Navbar />
         <Component {...pageProps} />
       </div>
