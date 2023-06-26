@@ -19,7 +19,7 @@ const Hero = () => {
             <RotatingText />
           </div>
           <div className="text-pale-gray-200">
-            I'm experienced in building <span className="text-green-400">effective software solutions</span>. Experienced in <span className="text-green-400">full-stack development</span> with a proven track record. A Quick-learner, flexible, and a jack-of-all-trades.
+            I'm experienced in building <span className="text-green-400">effective software solutions</span>. Experienced in <span className="text-green-400">full-stack development</span> with a proven track record.
           </div>
           <a href="/resume/latest.pdf" className="flex max-w-max items-center gap-2 border-2 text-green-400 hover:text-pale-gray-800 border-green-400 duration-250 ease-in-out transition-all hover:bg-green-400 font-medium px-4 py-2">
             <span>Check Out My Resume</span>
