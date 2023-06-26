@@ -23,11 +23,11 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({ children, title, per
         <p className="text-green-400 font-light text-sm">
           {period}
         </p>
-        <h1 className="text-pale-gray-50 font-bold text-xl">
+        <h1 className="text-pale-gray-50 font-semibold text-2xl mt-0.5 mb-1">
           {title}
         </h1>
         <div className="text-pale-gray-50">
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside pl-4">
             {children}
           </ul>
         </div>

@@ -4,11 +4,11 @@ import { Link } from "react-scroll"
 
 const Glance: React.FC = () => {
   return (
-    <div className="grid grid-rows-3 grid-flow-col gap-4 w-full">
+    <div className="grid grid-cols-1 lg:grid-cols-none lg:grid-rows-3 lg:grid-flow-col gap-4 w-full">
       <Link className="group bg-pale-gray-900 flex flex-col items-end row-span-3 rounded-2xl relative overflow-hidden cursor-pointer hover:-translate-y-2 duration-500 transition-all" to="lumina" smooth spy duration={500} offset={-100}>
         <div className="relative w-full">
           <div className="absolute w-full h-full z-10 bg-green-900 group-hover:bg-opacity-50 bg-opacity-0 duration-500" />
-          <img className="h-96 w-full object-cover z-0 scale-105 group-hover:saturate-0 saturate-100 group-hover:scale-100 duration-500 transition-all" src="/lumina.jpg" />
+          <img className="h-48 lg:h-96 w-full object-cover z-0 scale-105 group-hover:saturate-0 saturate-100 group-hover:scale-100 duration-500 transition-all" src="/lumina.jpg" />
         </div>
         <div className="flex flex-col justify-center p-4 space-y-4 z-10 bg-pale-gray-900 h-full w-full">
           <div>
@@ -16,7 +16,7 @@ const Glance: React.FC = () => {
           </div>
           <div>
             <p className="text-green-400">
-              Latest Internship
+              Latest Experience
             </p>
             <h1 className="text-pale-gray-50 font-bold">
               Lumina

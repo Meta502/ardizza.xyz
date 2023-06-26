@@ -3,19 +3,21 @@ import Timeline from '../components/Timeline'
 import Hero from '../components/Hero'
 import TimelineItem from '../components/Timeline/TimelineItem'
 import Glance from '../components/Glance'
+import Projects from '../components/Projects'
+import { AtSymbolIcon, EnvelopeIcon, LinkIcon } from '@heroicons/react/24/solid'
 
 const Home: NextPage = () => {
   return (
-    <div className="w-full font-inter">
+    <div className="w-full font-inter space-y-24">
       <Hero />
       <div className="bg-pale-gray-800 w-full max-w-5xl min-h-screen mx-auto space-y-2 flex flex-col gap-16">
-        <div id="at-a-glance" className="space-y-6 w-full">
+        <div id="at-a-glance" className="space-y-6 w-full px-6 xl:px-0">
           <h1 className="font-inter text-white text-3xl font-bold">
             At A Glance.
           </h1>
           <Glance />
         </div>
-        <div id="experiences" className="space-y-4">
+        <div id="experiences" className="space-y-6 xl:px-0 px-6">
           <h1 className="font-inter text-white text-3xl font-bold">
             Work Experience.
           </h1>
@@ -60,6 +62,67 @@ const Home: NextPage = () => {
               </li>
             </TimelineItem>
           </Timeline>
+        </div>
+        <div id="projects" className="space-y-6 px-6 lg:px-0">
+          <h1 className="font-inter text-white text-3xl font-bold">
+            My Projects.
+          </h1>
+          <Projects />
+        </div>
+      </div>
+
+      <div id="contact-me" className="space-y-6 flex space-x-4 h-full items-center justify-center bg-gradient-to-b from-pale-gray-900 to-pale-gray-900 py-16 px-6 lg:px-0">
+        <div className="w-full flex flex-col lg:flex-row max-w-5xl mx-auto lg:space-x-6">
+          <div className="space-y-2 mb-8 lg:mb-0">
+            <h1 className="font-inter text-white text-3xl font-bold">
+              Lets Get In Touch.
+            </h1>
+            <p className="text-pale-gray-200">
+              Feel free to contact me through one of the following platforms.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 lg:w-full">
+            <a href="mailto:me@ardizza.xyz" target="_blank" referrerPolicy="no-referrer" className="w-full space-y-4 border-l-2 pl-4 border-l-green-400 cursor-pointer">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-pale-gray-50 text-lg">me@ardizza.xyz</p>
+                  <h1 className="text-sm text-green-400">Email</h1>
+                </div>
+                <EnvelopeIcon className="w-8 text-pale-gray-50" />
+              </div>
+            </a>
+
+            <a href="https://github.com/Meta502" target="_blank" referrerPolicy="no-referrer" className="w-full space-y-4 border-l-2 pl-4 border-l-green-400">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-pale-gray-50 text-lg">Meta502</p>
+                  <h1 className="text-sm text-green-400">GitHub</h1>
+                </div>
+                <img src="/brands/github-mark-white.svg" className="w-8" />
+              </div>
+            </a>
+
+            <a target="_blank" referrerPolicy="no-referrer" href="https://twitter.com/adrianardizza" className="w-full space-y-4 border-l-2 pl-4 border-l-green-400">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-pale-gray-50 text-lg">@adrianardizza</p>
+                  <h1 className="text-sm text-green-400">Twitter</h1>
+                </div>
+                <img src="/brands/twitter.svg" className="w-8" />
+              </div>
+            </a>
+
+            <a target="_blank" referrerPolicy="no-referrer" href="https://linkedin.com/in/adrianardizza" className="w-full space-y-4 border-l-2 pl-4 border-l-green-400">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-pale-gray-50 text-lg">adrianardizza</p>
+                  <h1 className="text-sm text-green-400">Linkedin</h1>
+                </div>
+                <img src="/brands/linkedin.png" className="w-8" />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div >

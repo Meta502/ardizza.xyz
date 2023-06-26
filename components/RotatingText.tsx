@@ -7,13 +7,15 @@ const roles = [
   "Computer Science Student",
 ]
 
+const roleLength = roles.length
+
 const RotatingText: React.FC = () => {
   const [roleIndex, setRoleIndex] = React.useState(0)
   const role = roles[roleIndex]
 
   React.useEffect(() => {
     const changeTimer = setInterval(() => {
-      setRoleIndex((roleIndex + 1) % roles.length)
+      setRoleIndex((roleIndex + 1) % roleLength)
     }, 3000)
 
     return () => clearInterval(changeTimer)
@@ -23,7 +25,7 @@ const RotatingText: React.FC = () => {
     <AnimatePresence mode="wait">
       <motion.div
         key={role}
-        className="font-inter text-4xl text-green-400 flex space-x-2 relative"
+        className="font-inter lg:text-4xl text-green-400 flex space-x-2 relative"
       >
         {role.split(" ").map((item, index) => (
           <motion.p
@@ -34,7 +36,7 @@ const RotatingText: React.FC = () => {
             }}
             transition={{
               duration: 0.2,
-              delay: (index + 1) * 0.2
+              delay: (index) * 0.2
             }}
             animate={{
               rotateX: 0,
