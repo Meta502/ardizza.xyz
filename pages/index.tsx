@@ -28,7 +28,7 @@ const Home: NextPage = () => {
               Work Experience.
             </h1>
             <Timeline>
-              <TimelineItem id="tazker-ai" title="Tazker AI" period="Jakarta, March 2023 - Present">
+              <TimelineItem id="tazker-ai" title="Tazker AI" subtitle="Software Engineer Intern" period="Jakarta, March 2023 - Present">
                 <li>
                   Develop automation scripts for processing duplicates in over <span className="text-green-400">10,000 rows</span> of Google Sheets data, allowing for efficient data pipeline.
                 </li>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                   Write <span className="text-green-400">technical content</span> for company blog covering a variety of topics such as Artificial Intelligence, Machine Learning, and Generative AI.
                 </li>
               </TimelineItem>
-              <TimelineItem id="lumina" title="Lumina" period="Jakarta, December 2022 - Present">
+              <TimelineItem id="lumina" title="Lumina" subtitle="Software Engineer Intern" period="Jakarta, December 2022 - Present">
                 <li>
                   Built Worker Certification feature, allowing <span className="text-green-400">10,000 daily active users</span> to upload and verify their certificates.
                 </li>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
                   Became mobile app release manager for <span className="text-green-400">3+ app releases</span>, keeping track of work done by <span className="text-green-400">10+ team members</span>.
                 </li>
               </TimelineItem>
-              <TimelineItem id="sayakaya" title="SayaKaya" period="Jakarta, March 2022 - October 2022">
+              <TimelineItem id="sayakaya" subtitle="Backend Engineer Intern" title="SayaKaya" period="Jakarta, March 2022 - October 2022">
                 <li>
                   Initialise and develop high-performance payment service based on Rust used by over <span className="text-green-400">20,000 users</span>.
                 </li>
