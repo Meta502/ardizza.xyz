@@ -27,7 +27,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({ children, title, per
         <h1 className="flex flex-wrap items-center text-pale-gray-50 font-semibold text-2xl mt-0.5 mb-1">
           <span className="mr-2">{title}</span>
           <span className="text-green-400 hidden sm:block mr-2">|</span>
-          <span className="text-lg text-pale-gray-400">{subtitle}</span>
+          <span className="text-lg text-pale-gray-400 font-normal">{subtitle}</span>
         </h1>
         <div className="text-pale-gray-50">
           <ul className="list-disc list-outside pl-4">
