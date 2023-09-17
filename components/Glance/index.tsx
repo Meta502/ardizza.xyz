@@ -16,13 +16,13 @@ const Glance: React.FC = () => {
           </div>
           <div>
             <p className="text-green-400">
-              Latest Experience
+              Previous Experience
             </p>
             <h1 className="text-pale-gray-50 font-bold">
               Lumina
             </h1>
             <p className="text-pale-gray-500">
-              SE Intern | Dec '22 - Now
+              SE Intern | Dec '22 - Aug '23
             </p>
           </div>
         </div>

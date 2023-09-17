@@ -28,7 +28,9 @@ const Home: NextPage = () => {
               Work Experience.
             </h1>
             <Timeline>
-              <TimelineItem id="tazker-ai" title="Tazker AI" subtitle="Software Engineer Intern" period="Jakarta, March 2023 - Present">
+              <TimelineItem id="traveloka" title="Traveloka" subtitle="Back End Engineer Intern" period="Jakarta, August 2023 - Present">
+              </TimelineItem>
+              <TimelineItem id="tazker-ai" title="Tazker AI" subtitle="Software Engineer Intern" period="Jakarta, March 2023 - August 2023">
                 <li>
                   Develop automation scripts for processing duplicates in over <span className="text-green-400">10,000 rows</span> of Google Sheets data, allowing for efficient data pipeline.
                 </li>
@@ -42,7 +44,7 @@ const Home: NextPage = () => {
                   Write <span className="text-green-400">technical content</span> for company blog covering a variety of topics such as Artificial Intelligence, Machine Learning, and Generative AI.
                 </li>
               </TimelineItem>
-              <TimelineItem id="lumina" title="Lumina" subtitle="Software Engineer Intern" period="Jakarta, December 2022 - Present">
+              <TimelineItem id="lumina" title="Lumina" subtitle="Software Engineer Intern" period="Jakarta, December 2022 - August 2023">
                 <li>
                   Built Worker Certification feature, allowing <span className="text-green-400">10,000 daily active users</span> to upload and verify their certificates.
                 </li>
