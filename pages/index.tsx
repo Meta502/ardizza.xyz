@@ -13,6 +13,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Adrian Ardizza</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
       </Head>
       <div className="w-full font-inter space-y-24">
         <Hero />
@@ -28,7 +31,8 @@ const Home: NextPage = () => {
               Work Experience.
             </h1>
             <Timeline>
-              <TimelineItem id="traveloka" title="Traveloka" subtitle="Back End Engineer Intern" period="Jakarta, August 2023 - Present">
+              <TimelineItem id="traveloka" title="Traveloka" subtitle="Back End Engineer Intern" period="Jakarta, August 2023 - December 2023">
+                <li></li>
               </TimelineItem>
               <TimelineItem id="tazker-ai" title="Tazker AI" subtitle="Software Engineer Intern" period="Jakarta, March 2023 - August 2023">
                 <li>

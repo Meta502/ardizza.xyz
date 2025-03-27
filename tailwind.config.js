@@ -39,7 +39,7 @@ module.exports = {
       },
       fontFamily: {
         "mono": ["Inconsolata", "Courier New", "monospace"],
-        "inter": ["Inter"],
+        "inter": ["Inter", "sans-serif"],
       }
     },
   },
