@@ -31,10 +31,23 @@ const Home: NextPage = () => {
               Work Experience.
             </h1>
             <Timeline>
-              <TimelineItem id="traveloka" title="Traveloka" subtitle="Back End Engineer Intern" period="Jakarta, August 2023 - December 2023">
-                <li></li>
+              <TimelineItem id="gojek" title="GoTo Financial - Merchant Services" subtitle="Associate Software Engineer" period="Jakarta, August 2024 - Present">
+                <li>
+                  Currently working as a Software Engineer in GTF Merchant Services division, working on pushing the adoption of QRIS and Digital Payments to <span className="text-green-400">millions of UMKM</span> across Indonesia.
+                </li>
               </TimelineItem>
-              <TimelineItem id="tazker-ai" title="Tazker AI" subtitle="Software Engineer Intern" period="Jakarta, March 2023 - August 2023">
+              <TimelineItem id="tazker-ai-2" title="Tazker AI (YC W22)" subtitle="Automation Engineer Intern" period="Jakarta, January 2024 - July 2024">
+                <li>Implement sales lead web scraping pipeline capable of acquiring data of up to <span className="text-green-400">1000+ leads per day</span> from a notable jobs platform site.</li>
+                <li>Develop automated chat bot for connecting and engaging with up to <span className="text-green-400">200 potential sales lead per day</span> across multiple communication channels.</li>
+                <li>Help create automated B2B CRM pipeline for processing more than <span className="text-green-400">500 potential sales leads a per day</span> from top of funnel, leads classification, up to first contact.</li>
+              </TimelineItem>
+              <TimelineItem id="traveloka" title="Traveloka" subtitle="Back End Engineer Intern" period="Jakarta, August 2023 - December 2023">
+                <li>Initialize Flight Demand data microservice and migrate more than 20 modules owned by Flight Demand from legacy Flight data service.</li>
+                <li>Migrate 40+ services used by teams across multiple teams and domains in Traveloka to use the new Flight Demand data service in only 4 months.</li>
+                <li>Develop an automated service migration script that reduced Flight Demand data service migration times by more than 50%.</li>
+                <li>Migrate 3 services owned by Flight Demand to their own dedicated repositories.</li>
+              </TimelineItem>
+              <TimelineItem id="tazker-ai" title="Tazker AI (YC W22)" subtitle="Software Engineer Intern" period="Jakarta, March 2023 - August 2023">
                 <li>
                   Develop automation scripts for processing duplicates in over <span className="text-green-400">10,000 rows</span> of Google Sheets data, allowing for efficient data pipeline.
                 </li>
@@ -48,7 +61,7 @@ const Home: NextPage = () => {
                   Write <span className="text-green-400">technical content</span> for company blog covering a variety of topics such as Artificial Intelligence, Machine Learning, and Generative AI.
                 </li>
               </TimelineItem>
-              <TimelineItem id="lumina" title="Lumina" subtitle="Software Engineer Intern" period="Jakarta, December 2022 - August 2023">
+              <TimelineItem id="lumina" title="Lumina (YC W22)" subtitle="Software Engineer Intern" period="Jakarta, December 2022 - August 2023">
                 <li>
                   Built Worker Certification feature, allowing <span className="text-green-400">10,000 daily active users</span> to upload and verify their certificates.
                 </li>
